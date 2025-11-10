@@ -16,10 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from basic.views import add
-from basic.views import sub
-from basic.views import mul
-from basic.views import div
+from basic.views import add,sub,mul,div
+from basic.views import health,addStudent
+
 
 
 urlpatterns = [
@@ -28,6 +27,8 @@ urlpatterns = [
     path('sub/',sub),
     path('mul/',mul),
     path('div/',div),
+    path('health/',health),
+    path('student/',addStudent)
 
 
 
