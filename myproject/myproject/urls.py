@@ -17,7 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from basic.views import add,sub,mul,div
-from basic.views import health,addStudent
+from basic.views import sample,sample1,sampleInfo,dynamicResponse
+from basic.views import health,addStudent,job1,job2
 
 
 
@@ -28,13 +29,11 @@ urlpatterns = [
     path('mul/',mul),
     path('div/',div),
     path('health/',health),
-    path('student/',addStudent)
-
-
-
-
-    # path('greet/',sample),
-    # path('info/',sample1),
-    # path('infoo/',sampleInfo),
-    # path('dynamic/',dynamicResponse),
+    path('student/',addStudent),
+    path('greet/',sample),
+    path('info/',sample1),
+    path('infoo/',sampleInfo),
+    path('dynamic/',dynamicResponse),
+    path('job1/',job1),
+    path('job2/',job2)
 ]
